@@ -5,22 +5,99 @@
     </i>
     <div class="details">
       <h3>
-        <slot name="heading"></slot>
+        <slot name="name"></slot>
+        <slot name="recordANS"></slot>
       </h3>
-      <slot></slot>
+      <div class="content">
+        <div class="top">
+          <p>
+            <h7 class="mayor">Nome:</h7>
+            <slot name="corporate"></slot>
+            <h7 class="mayor">CNPJ:</h7>
+            <slot name="cnpj"></slot>
+          </p>
+        </div>
+        <div class="adress">
+          <p>
+            <h7 class="mayor"> Logradouro: </h7>
+            <slot name="public-place"></slot>
+            <h7 class="mayor"> Número: </h7>
+            <slot name="number"></slot>
+            <h7 class="mayor"> Complemento: </h7>
+            <slot name="complement"></slot>
+            <h7 class="mayor"> Bairro: </h7>
+            <slot name="district"></slot>
+            <h7 class="mayor"> Cidade: </h7>
+            <slot name="city"></slot>
+            <h7 class="mayor"> UF: </h7>
+            <slot name="state"></slot>
+            <h7 class="mayor"> CEP: </h7>
+            <slot name="code"></slot>
+          </p>
+        </div>
+        <div class="outers">
+          <p>
+            <h7 class="mayor"> DDD: </h7>
+            <slot name="ddd"></slot>
+            <h7 class="mayor"> Telefone: </h7>
+            <slot name="telephone"></slot>
+            <h7 class="mayor"> Fax: </h7>
+            <slot name="fax"></slot>
+            <h7 class="mayor"> E-mail: </h7>
+            <slot name="e-mail"></slot>
+            <h7 class="mayor"> Representante: </h7>
+            <slot name="representative"></slot>
+            <h7 class="mayor"> Cargo Representante: </h7>
+            <slot name="representative-position"></slot>
+            <h7 class="mayor"> Data Registro: </h7>
+            <slot name="registration-date"></slot>
+          </p>
+        </div>
+        <slot></slot>
+      </div>
     </div>
   </div>
 </template>
 
 <style scoped>
 .item {
-  margin-top: 2rem;
+  margin: 2rem;
   display: flex;
+  width: 700px;
+
 }
 
 .details {
-  flex: 1;
+  display: flex;
   margin-left: 1rem;
+  text-align: justify;
+}
+
+.content {
+  flex-wrap: wrap;
+  margin: 0.5rem;
+}
+
+.top {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+.adress {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0.5rem;
+}
+
+.outers {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0.5rem;
+}
+
+.mayor {
+  color: #00bfff;
 }
 
 i {
@@ -58,7 +135,7 @@ h3 {
   }
 
   .item:before {
-    content: " ";
+    content: ' ';
     border-left: 1px solid var(--color-border);
     position: absolute;
     left: 0;
@@ -67,7 +144,7 @@ h3 {
   }
 
   .item:after {
-    content: " ";
+    content: ' ';
     border-left: 1px solid var(--color-border);
     position: absolute;
     left: 0;
