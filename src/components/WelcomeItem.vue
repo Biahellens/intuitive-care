@@ -65,10 +65,11 @@
   display: flex;
   width: 700px;
 
+
 }
 
 .details {
-  display: flex;
+  display: 1;
   margin-left: 1rem;
   text-align: justify;
 }

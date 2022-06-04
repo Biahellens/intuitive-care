@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from "vue-router";
-import HelloWorld from "@/components/HelloWorld.vue";
+import { RouterLink, RouterView } from 'vue-router';
+import HelloWorld from '@/components/HelloWorld.vue';
 </script>
 
 <template>
@@ -8,32 +8,29 @@ import HelloWorld from "@/components/HelloWorld.vue";
     <img
       alt="Vue logo"
       class="logo"
-      src="@/assets/logo.svg"
-      width="125"
-      height="125"
+      src="@/assets/logo_ic.png"
+      width="200"
+      height="46"
     />
-
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/newcard">New</RouterLink>
       </nav>
     </div>
   </header>
+
 
   <RouterView />
 </template>
 
 <style>
-@import "@/assets/base.css";
+@import '@/assets/base.css';
 
 #app {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-
   font-weight: normal;
 }
 
@@ -48,15 +45,15 @@ header {
 }
 
 a,
-.green {
+.DodgerbLue {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
+  color: #1e90ff;
   transition: 0.4s;
 }
 
 @media (hover: hover) {
   a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+    background-color: #4682b4;
   }
 }
 
@@ -85,27 +82,31 @@ nav a:first-of-type {
   border: 0;
 }
 
+
 @media (min-width: 1024px) {
   body {
     display: flex;
     place-items: center;
+    flex-wrap: wrap;
   }
 
   #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
   }
 
   header {
     display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 
   header .wrapper {
     display: flex;
-    place-items: flex-start;
     flex-wrap: wrap;
   }
 
