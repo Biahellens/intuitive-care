@@ -1,46 +1,30 @@
 #  intuitive-care
 
-This template should help get you started developing with Vue 3 in Vite.
+Projeto desenvolvido referente ao processo seletivo da Intuitive Care, para estágio.
 
-## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- [Intuitive-Care teste](#Intuitive-care)
+  - [Tecnologias](#tecnologias)
+  - [Inicializando](#inicializando)
 
-## Type Support for `.vue` Imports in TS
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+## Tecnologias
+- [Vue.JS](https://vuejs.org/guide/introduction.html#what-is-vue);
+- [Npm](https://www.npmjs.com/);
+- [TypeScript](https://www.typescriptlang.org/);
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+## Inicializando
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+O desenvolvimento foi a partir do Vue.JS com template typescript. Antes de iniciar, precisa-se instalar as dependências, para isso utilizamos o npm como nosso gerenciador de dependencias e xecutar o seguinte comando no terminar:
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+```bash
+$ npm i
 ```
 
-### Compile and Hot-Reload for Development
+agora com o as dependencias instaladas, podemos estar inicializando com através do comando:
 
-```sh
-npm run dev
+```bash
+$ npm start
 ```
 
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+que ficará disponivel na seguninte url: [localhost:3000](http://localhost:3000).
