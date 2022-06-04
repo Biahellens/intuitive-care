@@ -1,5 +1,5 @@
 {
-  "name": " intuitive-care",
+  "name": "intuitive-care",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
@@ -28,5 +28,17 @@
     "typescript": "~4.7.2",
     "vite": "^2.9.9",
     "vue-tsc": "^0.35.2"
-  }
+  },
+  "description": "This template should help get you started developing with Vue 3 in Vite.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Biahellens/intuitive-care.git"
+  },
+  "author": "Bianca Hellen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Biahellens/intuitive-care/issues"
+  },
+  "homepage": "https://github.com/Biahellens/intuitive-care#readme"
 }
