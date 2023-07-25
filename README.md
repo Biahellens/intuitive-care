@@ -1,6 +1,6 @@
 #  intuitive-care
 
-Projeto desenvolvido referente ao processo seletivo da Intuitive Care, para estágio.
+Projeto desenvolvido para cadastro de vendedores.
 
 
 - [Intuitive-Care teste](#Intuitive-care)
