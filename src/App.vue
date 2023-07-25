@@ -1,8 +1,10 @@
+<!-- eslint-disable prettier/prettier -->
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router';
-import HelloWorld from '@/components/HelloWorld.vue';
+import HelloWorld from '@/components/helloWorld/HelloWorld.vue';
 </script>
 
+<!-- eslint-disable prettier/prettier -->
 <template>
   <header>
     <img
@@ -24,11 +26,12 @@ import HelloWorld from '@/components/HelloWorld.vue';
   <RouterView />
 </template>
 
+<!-- eslint-disable prettier/prettier -->
 <style>
 @import '@/assets/base.css';
 
 #app {
-  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;

@@ -1,12 +1,9 @@
+<!-- eslint-disable prettier/prettier -->
 <script setup lang="ts">
-import WelcomeItem from './WelcomeItem.vue';
-import DocumentationIcon from './icons/IconDocumentation.vue';
-import ToolingIcon from './icons/IconTooling.vue';
-import EcosystemIcon from './icons/IconEcosystem.vue';
-import CommunityIcon from './icons/IconCommunity.vue';
-import SupportIcon from './icons/IconSupport.vue';
+import WelcomeItem from "../welcomeItem/WelcomeItem.vue";
+import SupportIcon from "../icons/IconSupport.vue";
 </script>
-
+<!-- eslint-disable prettier/prettier -->
 <template>
   <WelcomeItem>
     <template #icon>
@@ -34,7 +31,6 @@ import SupportIcon from './icons/IconSupport.vue';
     <template #representative> Eli Pinto de Melo Junior </template>
     <template #representative-position> Presidente </template>
     <template #registration-date> 12/01/2012 </template>
-
   </WelcomeItem>
 
   <WelcomeItem>
@@ -43,9 +39,7 @@ import SupportIcon from './icons/IconSupport.vue';
     </template>
     <template #name> ABBESS </template>
     <template #recordANS>417734</template>
-    <template #corporate>
-      Administradora de Benefícios
-    </template>
+    <template #corporate> Administradora de Benefícios </template>
     <template #cnpj> 7525246000126 </template>
 
     <template #public-place> AV Rio Branco </template>
@@ -63,6 +57,5 @@ import SupportIcon from './icons/IconSupport.vue';
     <template #representative> Marcelo Brandão Rocha </template>
     <template #representative-position> Presidente e Tesoureiro </template>
     <template #registration-date> 20/12/2010 </template>
-
   </WelcomeItem>
 </template>

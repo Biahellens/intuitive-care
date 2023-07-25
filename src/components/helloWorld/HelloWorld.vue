@@ -1,15 +1,16 @@
+<!-- eslint-disable prettier/prettier -->
 <script setup lang="ts">
 defineProps<{
   msg: string;
 }>();
 </script>
-
+<!-- eslint-disable prettier/prettier -->
 <template>
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
   </div>
 </template>
-
+<!-- eslint-disable prettier/prettier -->
 <style scoped>
 h1 {
   font-weight: 500;
